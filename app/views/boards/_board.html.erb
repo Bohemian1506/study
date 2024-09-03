@@ -21,6 +21,7 @@
           <li><i class="bi bi-calendar"></i><%= l board.created_at, format: :short %></li>
         </ul>
         <p class="card-text">本文</p>
+        <%= link_to board.body, '#' %>
       </div>
     </div>
   </div>
