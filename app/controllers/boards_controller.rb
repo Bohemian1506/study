@@ -18,8 +18,8 @@ class BoardsController < ApplicationController
   end
 
   def show
-    @board = Board.find(params[:id]) #bordsテーブルのidを取得している
-    @comment = Comment.new #コメントの新規作成
+    @board = Board.find(params[:id]) # bordsテーブルのidを取得している
+    @comment = Comment.new # コメントの新規作成
     @comments = @board.comments.includes(:user).order(created_at: :desc)
   end
 
