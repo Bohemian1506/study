@@ -30,11 +30,13 @@
       </div>
     </div>
     <%# コメントフォーム %>
+    <%= render 'comments/form', comment: @comment, board: @board %>
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <table class="table">
           <tbody id="table-comment">
             <%# コメント一覧 %>
+            <%= render @comments %>
           </tbody>
         </table>
       </div>
