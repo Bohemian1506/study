@@ -23,6 +23,10 @@ class BoardsController < ApplicationController
     @comments = @board.comments.includes(:user).order(created_at: :desc)
   end
 
+  def edit
+    @board = current_user.boards.find(params[:id])
+  end
+
   private
 
   def board_params
