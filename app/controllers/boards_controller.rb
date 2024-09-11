@@ -28,7 +28,7 @@ class BoardsController < ApplicationController
   end
 
   def update
-    @board = Board.find(params[:id])
+    @board = current_user.boards.find(params[:id])
     if @board.update(board_params)
       redirect_to board_path(@board), success: t('defaults.flash_message.updated', item: Board.model_name.human)
     else
