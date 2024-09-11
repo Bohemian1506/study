@@ -8,7 +8,9 @@ ja:
       email: メールアドレス
       password: パスワード
   defaults:
+    create: 作成
     post: 投稿
+    delete_confirm: 削除しますか？
     flash_message:
       created: "%{item}を作成しました"
       not_created: "%{item}を作成出来ませんでした"
