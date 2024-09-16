@@ -1,0 +1,4 @@
+<%= turbo_stream.remove "comment-#{@comment.id}" do %>
+    <%= render 'comments/form', comment: Comment.new, board: @comment.board %>
+<% end %>
+
