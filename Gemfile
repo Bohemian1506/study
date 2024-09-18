@@ -50,8 +50,6 @@ gem 'draper', '4.0.2'
 
 gem 'carrierwave', '~> 3.0'
 
-gem 'pry-byebug'
-
 gem 'turbo-rails', '1.1.1'
 
 group :development, :test do
@@ -84,3 +82,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'kaminari', '1.2.2'
+gem 'bootstrap5-kaminari-views'
